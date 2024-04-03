@@ -14,11 +14,11 @@ import { generateJwtToken } from "@/utils/generate-token";
 // };
 
 export const createUser = async (
-  firstName: String,
-  lastName: String,
+  name: String,
+  adress: String,
   email: String,
-  age: Number
+  password: String
 ) => {
-  const createUser = UserModel.create({ firstName, lastName, email, age });
+  const createUser = UserModel.create({ name, adress, email, password });
   return createUser;
 };

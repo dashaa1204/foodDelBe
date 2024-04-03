@@ -1,12 +1,10 @@
 import mongoose, { model, Schema } from "mongoose";
 
 const UserSchema = new Schema({
-  firstName: String,
-  lastName: String,
+  name: String,
+  adress: String,
   email: { type: String, required: true },
-  age: Number,
-  createdAt: Date,
-  updatedAt: Date,
+  password: String,
 });
 
 export const UserModel = mongoose.models.User || model("User", UserSchema);
