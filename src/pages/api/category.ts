@@ -1,8 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { createUser } from "@/services/user";
 import connect from "./database";
 import NextCors from "nextjs-cors";
-import { METHODS } from "http";
 import {
   createCategory,
   deleteCategory,
